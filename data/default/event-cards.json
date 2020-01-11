@@ -1,17 +1,17 @@
 {
     "event_card_0": {
         "type": "event",
-        "image": "https://images.unsplash.com/photo-1559842911-b901e423a777?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
-        "title": "smog (pollution, epidemic)",
-        "text": "left: {\"type\":\"add\",\"state\":{\"power\":-11},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"power\":24},\"flags\":{}}",
+        "image": "https://images.unsplash.com/photo-1522176223820-4326b4417597?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "immigration (pollution, money, people)",
+        "text": "left: {\"type\":\"add\",\"state\":{\"security\":-23},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"money\":-10,\"security\":25},\"flags\":{}}",
         "weight": 1,
-        "distance": "pollution,epidemic, environment,power",
+        "distance": "pollution,money,people, power,money,security",
         "actions": {
             "left": {
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "power": -11
+                        "security": -23
                     },
                     "flags": {}
                 }
@@ -20,7 +20,8 @@
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "power": 24
+                        "money": -10,
+                        "security": 25
                     },
                     "flags": {}
                 }
@@ -29,17 +30,17 @@
     },
     "event_card_1": {
         "type": "event",
-        "image": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
-        "title": "riot (nature)",
-        "text": "left: {\"type\":\"add\",\"state\":{\"people\":17},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"people\":18},\"flags\":{}}",
+        "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "air-pollution (environment, security)",
+        "text": "left: {\"type\":\"add\",\"state\":{\"security\":-19},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"environment\":-26},\"flags\":{}}",
         "weight": 1,
-        "distance": "nature, people,riot",
+        "distance": "environment,security, epidemic,environment,security",
         "actions": {
             "left": {
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "people": 17
+                        "security": -19
                     },
                     "flags": {}
                 }
@@ -48,7 +49,7 @@
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "people": 18
+                        "environment": -26
                     },
                     "flags": {}
                 }
@@ -57,17 +58,17 @@
     },
     "event_card_2": {
         "type": "event",
-        "image": "https://images.unsplash.com/photo-1562753041-cb2efeb58ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
-        "title": "import (money, riot)",
-        "text": "left: {\"type\":\"add\",\"state\":{\"nature\":22},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"nature\":12},\"flags\":{}}",
+        "image": "https://images.unsplash.com/photo-1569060368746-4b99609d49d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "export (power, environment)",
+        "text": "left: {\"type\":\"add\",\"state\":{\"money\":11},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"pollution\":-10},\"flags\":{}}",
         "weight": 1,
-        "distance": "money,riot, nature,power",
+        "distance": "power,environment, pollution,money,people",
         "actions": {
             "left": {
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "nature": 22
+                        "money": 11
                     },
                     "flags": {}
                 }
@@ -76,7 +77,7 @@
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "nature": 12
+                        "pollution": -10
                     },
                     "flags": {}
                 }
@@ -85,17 +86,17 @@
     },
     "event_card_3": {
         "type": "event",
-        "image": "https://images.unsplash.com/photo-1562753041-cb2efeb58ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
-        "title": "smog (medicine, power)",
-        "text": "left: {\"type\":\"add\",\"state\":{\"power\":-19},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"pollution\":-26},\"flags\":{}}",
+        "image": "https://images.unsplash.com/photo-1569060368746-4b99609d49d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "import (environment, security)",
+        "text": "left: {\"type\":\"add\",\"state\":{\"money\":10},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"security\":28},\"flags\":{}}",
         "weight": 1,
-        "distance": "medicine,power, power,pollution",
+        "distance": "environment,security, money,security",
         "actions": {
             "left": {
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "power": -19
+                        "money": 10
                     },
                     "flags": {}
                 }
@@ -104,7 +105,7 @@
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "pollution": -26
+                        "security": 28
                     },
                     "flags": {}
                 }
@@ -113,17 +114,18 @@
     },
     "event_card_4": {
         "type": "event",
-        "image": "https://images.unsplash.com/photo-1537084642907-629340c7e59c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
-        "title": "smog (pollution)",
-        "text": "left: {\"type\":\"add\",\"state\":{\"pollution\":13},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"environment\":-24},\"flags\":{}}",
+        "image": "https://images.unsplash.com/photo-1505682614136-0a12f9f7beea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "immigration (money, environment)",
+        "text": "left: {\"type\":\"add\",\"state\":{\"security\":11,\"people\":-23},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"nature\":25,\"people\":-23},\"flags\":{}}",
         "weight": 1,
-        "distance": "pollution, environment,pollution",
+        "distance": "money,environment, nature,security,people",
         "actions": {
             "left": {
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "pollution": 13
+                        "security": 11,
+                        "people": -23
                     },
                     "flags": {}
                 }
@@ -132,7 +134,8 @@
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "environment": -24
+                        "nature": 25,
+                        "people": -23
                     },
                     "flags": {}
                 }
@@ -141,17 +144,17 @@
     },
     "event_card_5": {
         "type": "event",
-        "image": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
-        "title": "immigration (power)",
-        "text": "left: {\"type\":\"add\",\"state\":{\"epidemic\":14},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"epidemic\":24},\"flags\":{}}",
+        "image": "https://images.unsplash.com/photo-1550236520-7050f3582da0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "water-pollution (security)",
+        "text": "left: {\"type\":\"add\",\"state\":{\"security\":25},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"security\":-22},\"flags\":{}}",
         "weight": 1,
-        "distance": "power, nature,epidemic",
+        "distance": "security, environment,security",
         "actions": {
             "left": {
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "epidemic": 14
+                        "security": 25
                     },
                     "flags": {}
                 }
@@ -160,7 +163,7 @@
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "epidemic": 24
+                        "security": -22
                     },
                     "flags": {}
                 }
@@ -169,17 +172,17 @@
     },
     "event_card_6": {
         "type": "event",
-        "image": "https://images.unsplash.com/photo-1551964508-20b2b2e81667?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
-        "title": "civil-unrest (security, riot)",
-        "text": "left: {\"type\":\"add\",\"state\":{\"people\":-27},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"people\":-11},\"flags\":{}}",
+        "image": "https://images.unsplash.com/photo-1569326513296-6112506c096d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "export (riot, money, environment)",
+        "text": "left: {\"type\":\"add\",\"state\":{\"people\":14},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"environment\":11},\"flags\":{}}",
         "weight": 1,
-        "distance": "security,riot, environment,people",
+        "distance": "riot,money,environment, environment,people",
         "actions": {
             "left": {
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "people": -27
+                        "people": 14
                     },
                     "flags": {}
                 }
@@ -188,7 +191,7 @@
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "people": -11
+                        "environment": 11
                     },
                     "flags": {}
                 }
@@ -197,17 +200,18 @@
     },
     "event_card_7": {
         "type": "event",
-        "image": "https://images.unsplash.com/photo-1494250820633-bd56384512d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
-        "title": "air-pollution (security)",
-        "text": "left: {\"type\":\"add\",\"state\":{\"pollution\":18},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"pollution\":20},\"flags\":{}}",
+        "image": "https://images.unsplash.com/photo-1569326513296-6112506c096d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "riot (riot, people)",
+        "text": "left: {\"type\":\"add\",\"state\":{\"medicine\":21,\"environment\":14},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"medicine\":-14,\"environment\":25},\"flags\":{}}",
         "weight": 1,
-        "distance": "security, pollution,epidemic",
+        "distance": "riot,people, medicine,environment,people",
         "actions": {
             "left": {
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "pollution": 18
+                        "medicine": 21,
+                        "environment": 14
                     },
                     "flags": {}
                 }
@@ -216,7 +220,8 @@
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "pollution": 20
+                        "medicine": -14,
+                        "environment": 25
                     },
                     "flags": {}
                 }
@@ -225,17 +230,18 @@
     },
     "event_card_8": {
         "type": "event",
-        "image": "https://images.unsplash.com/photo-1562753041-cb2efeb58ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
-        "title": "education (epidemic)",
-        "text": "left: {\"type\":\"add\",\"state\":{\"people\":12},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"people\":-25},\"flags\":{}}",
+        "image": "https://images.unsplash.com/photo-1569225060633-100d2b8e2bf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "international-conflict (security, people)",
+        "text": "left: {\"type\":\"add\",\"state\":{\"environment\":11,\"security\":-21},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"security\":19},\"flags\":{}}",
         "weight": 1,
-        "distance": "epidemic, people,power",
+        "distance": "security,people, medicine,environment,security",
         "actions": {
             "left": {
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "people": 12
+                        "environment": 11,
+                        "security": -21
                     },
                     "flags": {}
                 }
@@ -244,7 +250,7 @@
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "people": -25
+                        "security": 19
                     },
                     "flags": {}
                 }
@@ -253,17 +259,18 @@
     },
     "event_card_9": {
         "type": "event",
-        "image": "https://images.unsplash.com/photo-1550236520-7050f3582da0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
-        "title": "forest-fire (environment)",
-        "text": "left: {\"type\":\"add\",\"state\":{\"epidemic\":-23},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"power\":24},\"flags\":{}}",
+        "image": "https://images.unsplash.com/photo-1485745492261-a3819c494d11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "war (people)",
+        "text": "left: {\"type\":\"add\",\"state\":{\"nature\":-23,\"people\":16},\"flags\":{}}\n\nright: {\"type\":\"add\",\"state\":{\"security\":28},\"flags\":{}}",
         "weight": 1,
-        "distance": "environment, power,epidemic",
+        "distance": "people, nature,security,people",
         "actions": {
             "left": {
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "epidemic": -23
+                        "nature": -23,
+                        "people": 16
                     },
                     "flags": {}
                 }
@@ -272,7 +279,7 @@
                 "modifier": {
                     "type": "add",
                     "state": {
-                        "power": 24
+                        "security": 28
                     },
                     "flags": {}
                 }

@@ -1,20 +1,12 @@
 [
     {
-        "probability": 0.2636103623869569,
+        "probability": 0.3845660183850953,
         "shouldTriggerWhen": [
             {
                 "state": {
-                    "money": [
-                        14,
-                        88
-                    ]
-                }
-            },
-            {
-                "state": {
-                    "money": [
-                        10,
-                        62
+                    "pollution": [
+                        3,
+                        6
                     ]
                 }
             }
@@ -22,13 +14,21 @@
         "initialEventCardId": "event_card_0"
     },
     {
-        "probability": 0.4612011024194508,
+        "probability": 0.6522254571602001,
         "shouldTriggerWhen": [
             {
                 "state": {
-                    "power": [
-                        99,
-                        99
+                    "riot": [
+                        41,
+                        42
+                    ]
+                }
+            },
+            {
+                "state": {
+                    "riot": [
+                        1,
+                        66
                     ]
                 }
             }
@@ -36,21 +36,21 @@
         "initialEventCardId": "event_card_1"
     },
     {
-        "probability": 0.5499666509719386,
+        "probability": 0.4809876444850024,
         "shouldTriggerWhen": [
             {
                 "state": {
-                    "money": [
-                        19,
+                    "pollution": [
+                        36,
                         59
                     ]
                 }
             },
             {
                 "state": {
-                    "money": [
-                        53,
-                        57
+                    "pollution": [
+                        28,
+                        75
                     ]
                 }
             }
@@ -58,21 +58,21 @@
         "initialEventCardId": "event_card_2"
     },
     {
-        "probability": 0.734900229408212,
+        "probability": 0.5266845056721038,
         "shouldTriggerWhen": [
             {
                 "state": {
-                    "medicine": [
-                        56,
-                        58
+                    "epidemic": [
+                        18,
+                        23
                     ]
                 }
             },
             {
                 "state": {
-                    "medicine": [
-                        90,
-                        94
+                    "pollution": [
+                        79,
+                        87
                     ]
                 }
             }
@@ -80,13 +80,13 @@
         "initialEventCardId": "event_card_3"
     },
     {
-        "probability": 0.16928850174441515,
+        "probability": 0.23690282164795132,
         "shouldTriggerWhen": [
             {
                 "state": {
-                    "environment": [
-                        78,
-                        95
+                    "pollution": [
+                        83,
+                        84
                     ]
                 }
             }
@@ -94,13 +94,13 @@
         "initialEventCardId": "event_card_4"
     },
     {
-        "probability": 0.422247791682823,
+        "probability": 0.2041066415171077,
         "shouldTriggerWhen": [
             {
                 "state": {
-                    "power": [
-                        10,
-                        70
+                    "pollution": [
+                        70,
+                        73
                     ]
                 }
             }
@@ -108,21 +108,13 @@
         "initialEventCardId": "event_card_5"
     },
     {
-        "probability": 0.22560879602026832,
+        "probability": 0.24215917408078683,
         "shouldTriggerWhen": [
             {
                 "state": {
                     "riot": [
-                        63,
-                        91
-                    ]
-                }
-            },
-            {
-                "state": {
-                    "riot": [
-                        7,
-                        39
+                        60,
+                        67
                     ]
                 }
             }
@@ -130,21 +122,13 @@
         "initialEventCardId": "event_card_6"
     },
     {
-        "probability": 1,
+        "probability": 0.33136705415303236,
         "shouldTriggerWhen": [
             {
                 "state": {
-                    "money": [
-                        14,
-                        52
-                    ]
-                }
-            },
-            {
-                "state": {
-                    "money": [
-                        84,
-                        87
+                    "power": [
+                        89,
+                        91
                     ]
                 }
             }
@@ -152,21 +136,21 @@
         "initialEventCardId": "event_card_7"
     },
     {
-        "probability": 0.5278345619792678,
+        "probability": 1,
         "shouldTriggerWhen": [
             {
                 "state": {
-                    "pollution": [
-                        8,
-                        85
+                    "medicine": [
+                        7,
+                        46
                     ]
                 }
             },
             {
                 "state": {
-                    "riot": [
-                        15,
-                        17
+                    "medicine": [
+                        60,
+                        90
                     ]
                 }
             }
@@ -174,13 +158,21 @@
         "initialEventCardId": "event_card_8"
     },
     {
-        "probability": 0.7898901947407503,
+        "probability": 0.5832026844521722,
         "shouldTriggerWhen": [
             {
                 "state": {
-                    "riot": [
-                        37,
-                        79
+                    "medicine": [
+                        55,
+                        77
+                    ]
+                }
+            },
+            {
+                "state": {
+                    "medicine": [
+                        55,
+                        99
                     ]
                 }
             }
