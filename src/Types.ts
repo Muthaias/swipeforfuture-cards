@@ -5,13 +5,12 @@ interface CardDescription {
     title: string
     text: string
     weight: number
-    location: string
+    distance: string
 }
 
-export interface CardActionData {
-    description?: string
-    modifierType?: 'add' | 'set' | 'replace'
-    modifier?: {
+export interface GameWorldModifier {
+    type?: 'add' | 'set' | 'replace'
+    state?: {
         environment?: number
         people?: number
         security?: number
@@ -20,6 +19,11 @@ export interface CardActionData {
     flags?: {
         [x: string]: boolean
     }
+}
+
+export interface CardActionData {
+    description?: string
+    modifier: GameWorldModifier
 }
 
 export interface CardData extends CardDescription {
@@ -35,7 +39,11 @@ type WorldStateRange = [number, number]
 
 export interface WorldQuery {
     state?: {
-        [x: string]: WorldStateRange,
+        environment?: WorldStateRange
+        people?: WorldStateRange
+        security?: WorldStateRange
+        money?: WorldStateRange
+        [x: string]: WorldStateRange
     }
     flags?: {
         [x: string]: boolean
@@ -51,10 +59,10 @@ export interface WorldEvent {
 }
 
 export type EventCards = {
-    [eventCardId: string]: EventCardData
+    [eventCardId: string]: EventCard
 }
 
-export interface EventCardData extends CardDescription {
+export interface EventCard extends CardDescription {
     type: "event",
     actions: {
         left: EventCardActionData
@@ -64,6 +72,6 @@ export interface EventCardData extends CardDescription {
 
 type EventCardId = string
 
-interface EventCardActionData extends CardActionData {
+export interface EventCardActionData extends CardActionData {
     nextEventCardId?: EventCardId
 }

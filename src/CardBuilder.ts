@@ -1,4 +1,4 @@
-import { CardData, EventCardData, EventCards, WorldEvent, WorldQuery, CardActionData } from "./Types";
+import { CardData, EventCard, EventCards, WorldEvent, WorldQuery, CardActionData } from "./Types";
 
 type ContentDescriptor = {
     id: string;
@@ -168,10 +168,13 @@ const randomParameters = (parameters: string[], max?: number, min: number = 1): 
 }
 const randomAction = (parameters: string[]): CardActionData => {
     return {
-        modifierType: "add",
-        modifier: randomParameters(parameters).reduce((acc, pid) => (
-            Object.assign(acc, {[pid]: Math.sign(0.5 - Math.random()) * randomCount(10, 30)})
-        ), {})
+        modifier: {
+            type: 'add',
+            state: randomParameters(parameters).reduce((acc, pid) => (
+                Object.assign(acc, {[pid]: Math.sign(0.5 - Math.random()) * randomCount(10, 30)})
+            ), {}),
+            flags: {}
+        }
     };
 }
 const randomWorldQuery = (parameters: string[]): WorldQuery => {
@@ -226,7 +229,7 @@ export const generateCards = (numberOfCards: number): CardData[] => {
             title: randomTitle(selectionParameters, actionParameters, contentDescriptors),
             text: randomText(selectionParameters, actionParameters, left, right),
             weight: 1,
-            location: [selectionParameters, actionParameters].join(", "),
+            distance: [selectionParameters, actionParameters].join(", "),
             isAvailableWhen: isAvailableWhen,
             actions: {
                 left: left,
@@ -238,18 +241,18 @@ export const generateCards = (numberOfCards: number): CardData[] => {
 }
 
 export const generateEventCards = (numberOfCards: number): EventCards  => {
-    const cards = arrayOfLength(numberOfCards).map<EventCardData>((_, index) => {
+    const cards = arrayOfLength(numberOfCards).map<EventCard>((_, index) => {
         const selectionParameters = randomParameters(systemParameters, 3, 1);
         const actionParameters = randomParameters(systemParameters, 3, 2);
         const left = Object.assign(randomAction(actionParameters), {});
         const right = randomAction(actionParameters);
-        const card: EventCardData = {
+        const card: EventCard = {
             type: "event",
             image: randomImage(selectionParameters, systemImages, actionParameters),
             title: randomTitle(selectionParameters, actionParameters, contentDescriptors),
             text: randomText(selectionParameters, actionParameters, left, right),
             weight: 1,
-            location: [selectionParameters, actionParameters].join(", "),
+            distance: [selectionParameters, actionParameters].join(", "),
             actions: {
                 left: left,
                 right: right,
