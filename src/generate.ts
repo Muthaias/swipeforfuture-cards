@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const basePath = './data/default/';
 const writeData = (id: string, data: any) => {
-    fs.writeFileSync(basePath + id  + '.json', JSON.stringify(data));
+    fs.writeFileSync(basePath + id  + '.json', JSON.stringify(data, undefined, "    "));
 }
 
 const cards = generateCards(100);
