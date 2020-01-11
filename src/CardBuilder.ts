@@ -136,12 +136,13 @@ const contentDescriptors: ContentDescriptor[] = [
     {id: "immigration", tags: ["security", "people", "money"]},
 ];
 
-const systemParameters: string[] = [
+const mainParameters = [
     "money",
     "environment",
     "security",
     "people",
-
+];
+const systemParameters: string[] = [
     "medicine",
     "nature",
     "power",
@@ -218,8 +219,14 @@ const randomText = (parameters: string[], actionParameters: string[], left: Card
 
 export const generateCards = (numberOfCards: number): CardData[] => {
     return arrayOfLength(numberOfCards).map<CardData>((_, index) => {
-        const selectionParameters = randomParameters(systemParameters, 3, 1);
-        const actionParameters = randomParameters(systemParameters, 3, 2);
+        const selectionParameters = [
+            ...randomParameters(systemParameters, 2, 0),
+            ...randomParameters(mainParameters, 3, 1)
+        ];
+        const actionParameters = [
+            ...randomParameters(systemParameters, 2, 0),
+            ...randomParameters(mainParameters, 3, 2)
+        ];
         const isAvailableWhen = arrayOfLength(randomCount(1, 3)).map((_) => randomWorldQuery(selectionParameters));
         const left = randomAction(actionParameters);
         const right = randomAction(actionParameters);
@@ -242,8 +249,14 @@ export const generateCards = (numberOfCards: number): CardData[] => {
 
 export const generateEventCards = (numberOfCards: number): EventCards  => {
     const cards = arrayOfLength(numberOfCards).map<EventCard>((_, index) => {
-        const selectionParameters = randomParameters(systemParameters, 3, 1);
-        const actionParameters = randomParameters(systemParameters, 3, 2);
+        const selectionParameters = [
+            ...randomParameters(systemParameters, 2, 0),
+            ...randomParameters(mainParameters, 3, 1)
+        ];
+        const actionParameters = [
+            ...randomParameters(systemParameters, 2, 0),
+            ...randomParameters(mainParameters, 3, 2)
+        ];
         const left = Object.assign(randomAction(actionParameters), {});
         const right = randomAction(actionParameters);
         const card: EventCard = {
