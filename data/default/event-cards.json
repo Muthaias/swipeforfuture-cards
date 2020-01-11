@@ -1,0 +1,222 @@
+{
+    "event_card_0": {
+        "type": "event",
+        "image": "https://images.unsplash.com/photo-1536064479547-7ee40b74b807?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "import (money, people)",
+        "text": "left: {\"epidemic\":-22}\n\nright: {\"medicine\":15}",
+        "weight": 1,
+        "location": "money,people, medicine,epidemic",
+        "actions": {
+            "left": {
+                "modifierType": "add",
+                "modifier": {
+                    "epidemic": -22
+                }
+            },
+            "right": {
+                "modifierType": "add",
+                "modifier": {
+                    "medicine": 15
+                }
+            }
+        }
+    },
+    "event_card_1": {
+        "type": "event",
+        "image": "https://images.unsplash.com/photo-1561623002-b3520705eccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "smog (power, pollution)",
+        "text": "left: {\"epidemic\":-29}\n\nright: {\"epidemic\":24}",
+        "weight": 1,
+        "location": "power,pollution, epidemic,riot",
+        "actions": {
+            "left": {
+                "modifierType": "add",
+                "modifier": {
+                    "epidemic": -29
+                }
+            },
+            "right": {
+                "modifierType": "add",
+                "modifier": {
+                    "epidemic": 24
+                }
+            }
+        }
+    },
+    "event_card_2": {
+        "type": "event",
+        "image": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "drought (power)",
+        "text": "left: {\"environment\":-11}\n\nright: {\"medicine\":17}",
+        "weight": 1,
+        "location": "power, environment,medicine",
+        "actions": {
+            "left": {
+                "modifierType": "add",
+                "modifier": {
+                    "environment": -11
+                }
+            },
+            "right": {
+                "modifierType": "add",
+                "modifier": {
+                    "medicine": 17
+                }
+            }
+        }
+    },
+    "event_card_3": {
+        "type": "event",
+        "image": "https://images.unsplash.com/photo-1550236520-7050f3582da0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "riot (riot)",
+        "text": "left: {\"nature\":-11}\n\nright: {\"security\":14}",
+        "weight": 1,
+        "location": "riot, security,nature",
+        "actions": {
+            "left": {
+                "modifierType": "add",
+                "modifier": {
+                    "nature": -11
+                }
+            },
+            "right": {
+                "modifierType": "add",
+                "modifier": {
+                    "security": 14
+                }
+            }
+        }
+    },
+    "event_card_4": {
+        "type": "event",
+        "image": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "riot (nature, power)",
+        "text": "left: {\"nature\":-19}\n\nright: {\"nature\":-12}",
+        "weight": 1,
+        "location": "nature,power, nature,riot",
+        "actions": {
+            "left": {
+                "modifierType": "add",
+                "modifier": {
+                    "nature": -19
+                }
+            },
+            "right": {
+                "modifierType": "add",
+                "modifier": {
+                    "nature": -12
+                }
+            }
+        }
+    },
+    "event_card_5": {
+        "type": "event",
+        "image": "https://images.unsplash.com/photo-1562753041-cb2efeb58ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "smog (pollution)",
+        "text": "left: {\"riot\":12}\n\nright: {\"power\":-21}",
+        "weight": 1,
+        "location": "pollution, power,riot",
+        "actions": {
+            "left": {
+                "modifierType": "add",
+                "modifier": {
+                    "riot": 12
+                }
+            },
+            "right": {
+                "modifierType": "add",
+                "modifier": {
+                    "power": -21
+                }
+            }
+        }
+    },
+    "event_card_6": {
+        "type": "event",
+        "image": "https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "drought (power)",
+        "text": "left: {\"environment\":-27}\n\nright: {\"epidemic\":-10}",
+        "weight": 1,
+        "location": "power, environment,epidemic",
+        "actions": {
+            "left": {
+                "modifierType": "add",
+                "modifier": {
+                    "environment": -27
+                }
+            },
+            "right": {
+                "modifierType": "add",
+                "modifier": {
+                    "epidemic": -10
+                }
+            }
+        }
+    },
+    "event_card_7": {
+        "type": "event",
+        "image": "https://images.unsplash.com/photo-1569326513296-6112506c096d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "export (money)",
+        "text": "left: {\"pollution\":-13}\n\nright: {\"environment\":-26}",
+        "weight": 1,
+        "location": "money, environment,pollution",
+        "actions": {
+            "left": {
+                "modifierType": "add",
+                "modifier": {
+                    "pollution": -13
+                }
+            },
+            "right": {
+                "modifierType": "add",
+                "modifier": {
+                    "environment": -26
+                }
+            }
+        }
+    },
+    "event_card_8": {
+        "type": "event",
+        "image": "https://images.unsplash.com/photo-1569326513296-6112506c096d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "export (money, environment)",
+        "text": "left: {\"environment\":29}\n\nright: {\"environment\":12}",
+        "weight": 1,
+        "location": "money,environment, environment,power",
+        "actions": {
+            "left": {
+                "modifierType": "add",
+                "modifier": {
+                    "environment": 29
+                }
+            },
+            "right": {
+                "modifierType": "add",
+                "modifier": {
+                    "environment": 12
+                }
+            }
+        }
+    },
+    "event_card_9": {
+        "type": "event",
+        "image": "https://images.unsplash.com/photo-1562753041-cb2efeb58ebe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=600&q=80",
+        "title": "medicine (people)",
+        "text": "left: {\"power\":19}\n\nright: {\"medicine\":14}",
+        "weight": 1,
+        "location": "people, medicine,power",
+        "actions": {
+            "left": {
+                "modifierType": "add",
+                "modifier": {
+                    "power": 19
+                }
+            },
+            "right": {
+                "modifierType": "add",
+                "modifier": {
+                    "medicine": 14
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "state": {
+        "money": 31,
+        "environment": 38,
+        "security": 61,
+        "people": 63,
+        "medicine": 26,
+        "nature": 69,
+        "power": 20,
+        "pollution": 40,
+        "epidemic": 56,
+        "riot": 34
+    },
+    "flags": {}
+}

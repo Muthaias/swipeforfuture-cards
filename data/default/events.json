@@ -1,0 +1,174 @@
+[
+    {
+        "probability": 0.914806509339596,
+        "shouldTriggerWhen": [
+            {
+                "state": {
+                    "riot": [
+                        15,
+                        82
+                    ]
+                }
+            }
+        ],
+        "initialEventCardId": "event_card_0"
+    },
+    {
+        "probability": 0.41021915151816135,
+        "shouldTriggerWhen": [
+            {
+                "state": {
+                    "nature": [
+                        27,
+                        86
+                    ]
+                }
+            },
+            {
+                "state": {
+                    "people": [
+                        61,
+                        92
+                    ]
+                }
+            }
+        ],
+        "initialEventCardId": "event_card_1"
+    },
+    {
+        "probability": 0.6669001886964686,
+        "shouldTriggerWhen": [
+            {
+                "state": {
+                    "environment": [
+                        0,
+                        93
+                    ]
+                }
+            }
+        ],
+        "initialEventCardId": "event_card_2"
+    },
+    {
+        "probability": 0.5726127972412317,
+        "shouldTriggerWhen": [
+            {
+                "state": {
+                    "people": [
+                        56,
+                        78
+                    ]
+                }
+            }
+        ],
+        "initialEventCardId": "event_card_3"
+    },
+    {
+        "probability": 0.4319606847313143,
+        "shouldTriggerWhen": [
+            {
+                "state": {
+                    "power": [
+                        88,
+                        97
+                    ]
+                }
+            }
+        ],
+        "initialEventCardId": "event_card_4"
+    },
+    {
+        "probability": 0.7577992768635272,
+        "shouldTriggerWhen": [
+            {
+                "state": {
+                    "people": [
+                        25,
+                        62
+                    ]
+                }
+            },
+            {
+                "state": {
+                    "people": [
+                        95,
+                        99
+                    ]
+                }
+            }
+        ],
+        "initialEventCardId": "event_card_5"
+    },
+    {
+        "probability": 0.375299343400732,
+        "shouldTriggerWhen": [
+            {
+                "state": {
+                    "medicine": [
+                        17,
+                        51
+                    ]
+                }
+            },
+            {
+                "state": {
+                    "medicine": [
+                        90,
+                        94
+                    ]
+                }
+            }
+        ],
+        "initialEventCardId": "event_card_6"
+    },
+    {
+        "probability": 0.22385684917521412,
+        "shouldTriggerWhen": [
+            {
+                "state": {
+                    "nature": [
+                        28,
+                        95
+                    ]
+                }
+            }
+        ],
+        "initialEventCardId": "event_card_7"
+    },
+    {
+        "probability": 0.6422618467844027,
+        "shouldTriggerWhen": [
+            {
+                "state": {
+                    "medicine": [
+                        81,
+                        90
+                    ]
+                }
+            },
+            {
+                "state": {
+                    "medicine": [
+                        45,
+                        96
+                    ]
+                }
+            }
+        ],
+        "initialEventCardId": "event_card_8"
+    },
+    {
+        "probability": 0.5397786253180114,
+        "shouldTriggerWhen": [
+            {
+                "state": {
+                    "nature": [
+                        20,
+                        31
+                    ]
+                }
+            }
+        ],
+        "initialEventCardId": "event_card_9"
+    }
+]
