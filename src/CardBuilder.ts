@@ -294,7 +294,7 @@ export const generateEvents = (eventCards: EventCards): WorldEvent[] => {
 
 export const generateDefaultState = () => {
     return {
-        state: systemParameters.reduce((acc, id) => {
+        state: [...mainParameters, ...systemParameters].reduce((acc, id) => {
             acc[id] = 20 + Math.floor(Math.random() * 50);
             return acc;
         }, {}),
