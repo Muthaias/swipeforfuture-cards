@@ -1,11 +1,15 @@
 {
     "state": {
-        "medicine": 36,
-        "nature": 36,
-        "power": 21,
+        "money": 68,
+        "environment": 28,
+        "security": 30,
+        "people": 32,
+        "medicine": 68,
+        "nature": 43,
+        "power": 63,
         "pollution": 54,
-        "epidemic": 40,
-        "riot": 29
+        "epidemic": 38,
+        "riot": 36
     },
     "flags": {}
 }
